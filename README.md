@@ -98,7 +98,7 @@ open your grafana and add datasource **loki** <br />
 7. choose your label app
 ![Alt text](image-16.png)
 8. your log apps below
-![Alt text](image-17.png)
+![Alt text](image-18.png)
 
 
 
