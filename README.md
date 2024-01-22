@@ -52,8 +52,8 @@ watch kubectl get pod -n loki
 all pod will up about 2 minutes
 ![Alt text](image-6.png)
 **note:** <br />
-loki-0 : The main server component <br />
-loki-promtail-xxx : Agent for share log to loki main server
+**loki-0 :** The main server component <br />
+**loki-promtail-xxx** : Agent for share log to loki main server
 
 ## open service loki from your cluster with nodeport
 1. check your service first
@@ -78,7 +78,7 @@ kubectl get svc -n loki
 **NodePort** listen on **3100:30910/TCP** 
 
 # access your loki service from Grafana
-we assume the grafana alaready installed so we use teh grafana to visualize log <br />
+we assume your grafana already installed so we use the grafana to visualize log <br />
 open your grafana and add datasource **loki** <br />
 
 1. login into grafana choose connection <br />
