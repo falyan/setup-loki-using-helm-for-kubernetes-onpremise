@@ -43,7 +43,7 @@ helm upgrade --install loki --namespace=loki grafana/loki-stack
 ```
 ![Alt text](image-4.png)
 
-3. watch and wait a view minutes pod loki and promtail is creating
+3. watch pod loki and promtail is creating, wait a view minutes 
 ```bash
 watch kubectl get pod -n loki
 ```
