@@ -26,7 +26,7 @@ helm version
 
 ## Add repository loki using helm chart
 ```bash
-    helm repo add grafana https://grafana.github.io/helm-charts
+helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 helm repo list
 ```
@@ -53,7 +53,20 @@ all pod will up about 2 minutes
 ![Alt text](image-6.png)
 **note:** <br />
 loki-0 : The main server component <br />
-loki-promtail-xxx : agent for share log to loki main server
+loki-promtail-xxx : Agent for share log to loki main server
+
+## open service loki form your cluster with nodeport
+1. check your service first
+```bash
+kubectl get svc -n loki
+```
+![Alt text](image-7.png)
+
+type default service is Cluster-IP, we will change to NodePort 
+```bash
+
+```
+
 
 
 
