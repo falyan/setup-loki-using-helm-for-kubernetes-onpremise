@@ -55,7 +55,7 @@ all pod will up about 2 minutes
 loki-0 : The main server component <br />
 loki-promtail-xxx : Agent for share log to loki main server
 
-## open service loki form your cluster with nodeport
+## open service loki from your cluster with nodeport
 1. check your service first
 ```bash
 kubectl get svc -n loki
@@ -68,7 +68,7 @@ kubectl edit svc loki -n loki
 ```
 ![Alt text](image-8.png)
 
-kubernetes will asign nodeport automatically, check with comand below
+kubernetes will assign nodeport automatically, check with command below
 
 ```bash
 kubectl get svc -n loki
