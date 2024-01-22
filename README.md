@@ -62,10 +62,23 @@ kubectl get svc -n loki
 ```
 ![Alt text](image-7.png)
 
-type default service is Cluster-IP, we will change to NodePort 
+type default service is **Cluster-IP**, we will change to **NodePort** 
 ```bash
-
+kubectl edit svc loki -n loki
 ```
+![Alt text](image-8.png)
+
+kubernetes will asign nodeport automatically, check with comand below
+
+```bash
+kubectl get svc -n loki
+```
+![Alt text](image-9.png)
+
+**NodePort** created in 3100:30910/TCP 
+
+
+
 
 
 
