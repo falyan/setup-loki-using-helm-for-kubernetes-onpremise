@@ -43,14 +43,17 @@ helm upgrade --install loki --namespace=loki grafana/loki-stack
 ```
 ![Alt text](image-4.png)
 
-3. watch and wait a view minutes pod loki and promtail
+3. watch and wait a view minutes pod loki and promtail is creating
 ```bash
 watch kubectl get pod -n loki
 ```
 ![Alt text](image-5.png)
 
-all pod already up about 2 minutes
+all pod will up about 2 minutes
 ![Alt text](image-6.png)
+**note:** <br />
+loki-0 : The main server component <br />
+loki-promtail-xxx : agent for share log to loki main server
 
 
 
