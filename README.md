@@ -1,4 +1,4 @@
-# setup loki using helm for kubernetes onpremise
+# setup loki using helm for kubernetes on-premise
 setup loki using helm for k8s on premise
 ![Alt text](image.png)
 
