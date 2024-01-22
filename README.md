@@ -24,7 +24,34 @@ helm version
 ```
 ![Alt text](image-2.png)
 
-## Add repository  
+## Add repository loki using helm chart
+```bash
+    helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
+helm repo list
+```
+![Alt text](image-3.png)
+
+## Deploy Loki and Promtail to your cluster with default value and custome namespace
+1. create namespace loki on your cluster
+```bash
+kubectl create namespace loki
+```
+2. deploy loki and promtail to loki namespace
+```bash
+helm upgrade --install loki --namespace=loki grafana/loki-stack
+```
+![Alt text](image-4.png)
+
+3. watch and wait a view minutes pod loki and promtail
+```bash
+watch kubectl get pod -n loki
+```
+![Alt text](image-5.png)
+
+all pod already up about 2 minutes
+![Alt text](image-6.png)
+
 
 
 
