@@ -97,8 +97,9 @@ open your grafana and add datasource **loki** <br />
 ![Alt text](image-15.png) <br />
 7. choose your label app <br />
 ![Alt text](image-16.png) <br />
-**select label :** **app** <br />
-**select value :** **your pod name** <br />
+**note :**
+select label : **app** <br />
+select value : **your pod name** <br />
 8. your log apps below <br />
 ![Alt text](image-18.png) <br />
 
