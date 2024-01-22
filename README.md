@@ -75,7 +75,27 @@ kubectl get svc -n loki
 ```
 ![Alt text](image-9.png)
 
-**NodePort** created in 3100:30910/TCP 
+**NodePort** listen on **3100:30910/TCP** 
+
+# access your loki service from Grafana
+we assume the grafana alaready installed so we use teh grafana to visualize log <br />
+open your grafana and add datasource **loki** <br />
+
+1. login into grafana choose connection
+![Alt text](image-10.png)
+2. add new connection, search loki
+![Alt text](image-11.png)
+3. add new datasource
+![Alt text](image-12.png)
+4. add datasourcename and ip source loki from your cluster
+![Alt text](image-13.png)
+**Name:** dataource name
+**URL:** your cluster and NodePort **{{http://ip-cluster:NodePort}}**
+5. go to explore to see you log
+![Alt text](image-14.png)
+
+
+
 
 
 
