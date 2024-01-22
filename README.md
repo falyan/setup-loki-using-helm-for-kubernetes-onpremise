@@ -81,24 +81,31 @@ kubectl get svc -n loki
 we assume the grafana alaready installed so we use teh grafana to visualize log <br />
 open your grafana and add datasource **loki** <br />
 
-1. login into grafana choose connection
-![Alt text](image-10.png)
-2. add new connection, search loki
-![Alt text](image-11.png)
-3. add new datasource
-![Alt text](image-12.png)
-4. add datasourcename and ip source loki from your cluster
-![Alt text](image-13.png)
-**Name:** dataource name
-**URL:** your cluster and NodePort **{{http://ip-cluster:NodePort}}**
-5. go to explore to see your log
-![Alt text](image-14.png)
-6. choose your datasourece
-![Alt text](image-15.png)
-7. choose your label app
-![Alt text](image-16.png)
-8. your log apps below
-![Alt text](image-18.png)
+1. login into grafana choose connection <br />
+![Alt text](image-10.png) <br />
+2. add new connection, search loki <br />
+![Alt text](image-11.png) <br />
+3. add new datasource <br />
+![Alt text](image-12.png) <br />
+4. add datasourcename and ip source loki from your cluster <br />
+![Alt text](image-13.png) <br />
+**Name:** dataource name <br />
+**URL:** your ip cluster and NodePort **{{http://ip-cluster:NodePort}}** <br />
+5. go to explore to see your log <br />
+![Alt text](image-14.png) <br />
+6. choose your datasourece <br />
+![Alt text](image-15.png) <br />
+7. choose your label app <br />
+![Alt text](image-16.png) <br />
+**select label :** **app** <br />
+**select value :** **your pod name** <br />
+8. your log apps below <br />
+![Alt text](image-18.png) <br />
+
+# Thankyou :D
+
+## 🔗 About me
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/falyan-zuril-587585247/)
 
 
 
