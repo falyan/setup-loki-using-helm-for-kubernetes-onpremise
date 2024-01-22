@@ -91,8 +91,15 @@ open your grafana and add datasource **loki** <br />
 ![Alt text](image-13.png)
 **Name:** dataource name
 **URL:** your cluster and NodePort **{{http://ip-cluster:NodePort}}**
-5. go to explore to see you log
+5. go to explore to see your log
 ![Alt text](image-14.png)
+6. choose your datasourece
+![Alt text](image-15.png)
+7. choose your label app
+![Alt text](image-16.png)
+8. your log apps below
+![Alt text](image-17.png)
+
 
 
 
