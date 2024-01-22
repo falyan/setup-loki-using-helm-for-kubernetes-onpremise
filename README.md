@@ -2,9 +2,21 @@
 setup loki using helm for k8s on premise
 ![Alt text](image.png)
 
-## install Helm on your cluster
+## Install Helm on your cluster
 ```bash 
+mkdir helm
+cd helm
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+ls
+```
+![Alt text](image-1.png)
+```bash
 chmod 700 get_helm.sh
 ./get_helm.sh
+helm version
 ```
+![Alt text](image-2.png)
+
+
+
+
